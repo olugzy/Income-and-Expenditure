@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Victor Oluga | Data/BI Analyst Portfolio</title>
+  <style>
+    :root {
+      --bg-light: #ffffff;
+      --text-light: #1a1a1a;
+      --bg-dark: #1e1e1e;
+      --text-dark: #e0e0e0;
+      --accent: #007acc;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-light);
+      color: var(--text-light);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    body.dark-mode {
+      background-color: var(--bg-dark);
+      color: var(--text-dark);
+    }
+
+    header {
+      padding: 2rem;
+      text-align: center;
+      background: var(--accent);
+      color: white;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1, h2, h3 {
+      margin-top: 1.5rem;
+    }
+
+    img.dashboard {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 1.5rem auto;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+    }
+
+    .download-buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+
+    .download-buttons a {
+      padding: 0.75rem 1.2rem;
+      background-color: var(--accent);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    .download-buttons a:hover {
+      background-color: #005fa3;
+    }
+
+    .toggle-mode {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .feedback-button {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      background-color: #28a745;
+      color: white;
+      padding: 0.75rem 1.2rem;
+      border-radius: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+  <button class="toggle-mode" onclick="toggleMode()">Toggle Mode</button>
+
+  <header>
+    <h1>Victor Oluga</h1>
+    <p>Data / Business Intelligence Analyst</p>
+  </header>
+
+  <main>
+    <h2>About Me</h2>
+    <p>
+      Accounting professional with a keen interest in data analysis. Focused on transforming raw data into actionable insights for smarter decision-making.
+    </p>
+
+    <h2>Skills / Tools</h2>
+    <p>Problem-solving, Critical thinking, Self-learning, Financial analysis, Effective communication, Data cleaning, Data visualization, Excel, Power BI, SQL</p>
+
+    <h2>Project: Bank Statement Analysis for Mr. Jameson</h2>
+    <p>This is my first personal project after completing a Data Analytics course. It analyzes finance data of Mr. Jameson to generate insights into the pattern of his monthly income and expenditure.</p>
+
+    <h3>Tools Used</h3>
+    <p>Microsoft Excel, Power BI</p>
+
+    <img class="dashboard" src="https://raw.githubusercontent.com/olugzy/Income-and-Expenditure/main/dashboard-visual.png" alt="Dashboard Visual" />
+
+    <h3>Key Findings</h3>
+    <ul>
+      <li>Expenditure within the given period exceeds the Total Income at ₦2,777,431.00 to ₦2,634,915.00</li>
+      <li>March and May had the highest expenditures: ₦688,551.25 and ₦487,397.50</li>
+      <li>Total Debit count: 558, Total Credit count: 118</li>
+    </ul>
+
+    <h3>Recommendation</h3>
+    <p>Mr. Jameson should seek an additional stream of income to increase his earnings and maintain a balanced account.</p>
+
+    <h3>How to Use</h3>
+    <p>Ensure you have Microsoft Excel or a compatible spreadsheet app to open the datasets, and Power BI to explore the dashboard visuals.</p>
+
+    <div class="download-buttons">
+      <a href="https://drive.google.com/uc?export=download&id=1wWBTEklIBwkyoZUHKqpz3vVqjHUpVg0d" download>Download Cleaned Data</a>
+      <a href="https://drive.google.com/uc?export=download&id=1pPoTC9nc02294_5Epuu6hi8l1oNflOFT" download>Download Raw Data</a>
+    </div>
+
+    <h3>Contact</h3>
+    <p>Email: <a href="mailto:Victoroluga@gmail.com">Victoroluga@gmail.com</a></p>
+  </main>
+
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfyKCBtLB8FkIgm8W_RIB73IWnQjTFga5qxHmhQa30EqGi1NQ/viewform" class="feedback-button" target="_blank">Give Feedback</a>
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+</html>
